@@ -29,6 +29,7 @@ $(function () {
   })
 
   $(document).ajaxStop(function () {
+    //关闭进度条
     NProgress.done();
   })
 })
