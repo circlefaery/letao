@@ -26,6 +26,10 @@ ul {
 .mt_20 {
   margin-top: 20px;
 }
+.red {
+  color: #A94442;
+}
+
 
 .lt_aside {
   position: fixed;
@@ -35,6 +39,10 @@ ul {
   height: 100%;
   background-color: #222D32;
   z-index: 999;
+  transition: left 1s;
+}
+.lt_aside.hidemenu {
+  left: -180px;
 }
 .lt_aside .brand {
   width: 100%;
@@ -94,6 +102,10 @@ ul {
   background-color: pink;
   padding-left: 180px;
   padding-top: 50px;
+  transition: padding-left 1s;
+}
+.lt_main.hidemenu {
+  padding-left: 0px;
 }
 .lt_topbar {
   position: fixed;
@@ -103,6 +115,10 @@ ul {
   height: 50px;
   background-color: #3C8DBC;
   padding-left: 180px;
+  transition: padding-left 1s;
+}
+.lt_topbar.hidemenu {
+  padding-left: 0px;
 }
 .lt_topbar .icon_left,
 .lt_topbar .icon_right {
